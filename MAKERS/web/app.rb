@@ -4,11 +4,11 @@ require 'sinatra'
 #   @name = ["Amigo", "Oscar", "Viking", "Veronica"].sample
 #   erb :index
 # end
-get '/cat-form'do
+get '/cat-form' do
   erb :cat_form
 end
 
-get '/named-cat' do
+post '/named-cat' do
   @name = params[:name]
   erb :index
 end
